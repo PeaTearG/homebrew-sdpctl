@@ -1,15 +1,15 @@
 class Sdpctl < Formula
   desc "Appgate sdpctl is compatible with SDP Collectives versions 6 and newer"
   homepage "https://github.com/appgate/sdpctl"
-  version "2023.08.29"
+  version "2023.09.14"
 
   on_macos do
     if RUBY_PLATFORM.include?("x86_64")
       url "https://github.com/appgate/sdpctl/releases/download/#{version}/sdpctl_#{version}_darwin_amd64.tar.gz"
-      sha256 "baad99013d6864462cab7f5291971198aaa75cb85ce87be2c2eb109fec326ece"
+      sha256 "e6ea2b70848857f619c13d3c33242db9c949fe29614cc75510664ead83383736"
     else
       url "https://github.com/appgate/sdpctl/releases/download/#{version}/sdpctl_#{version}_darwin_arm64.tar.gz"
-      sha256 "8fb4e1150b492888f27a8cab3e9485c0c3aef5d3a855a796032db37e4957421b"
+      sha256 "6d86197557d5207dd082524f1c56be20830c9398d49b260158f96be02e68de8e"
     end
   end
 
